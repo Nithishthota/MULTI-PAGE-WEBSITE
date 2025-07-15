@@ -1,0 +1,63 @@
+
+<!-- Header + Nav -->
+<header>
+  <div class="container">
+    <div class="logo">MyWebsite</div>
+    <nav>
+      <a href="index.html" class="nav-link" data-page="index">Home</a>
+      <a href="about.html" class="nav-link" data-page="about">About</a>
+      <a href="contact.html" class="nav-link" data-page="contact">Contact</a>
+    </nav>
+  </div>
+</header>
+<!-- Footer -->
+<footer>
+  <div class="container">
+    <p>&copy; 2025 MyWebsite. All rights reserved.</p>
+  </div>
+</footer>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- Include Header -->
+  <header> ... </header>
+
+  <div class="container">
+    <section>
+      <h1>Contact Us</h1>
+      <form>
+        <label>Name</label><br>
+        <input type="text" placeholder="Your name" /><br><br>
+
+        <label>Email</label><br>
+        <input type="email" placeholder="Your email" /><br><br>
+
+        <label>Message</label><br>
+        <textarea placeholder="Your message" rows="5"></textarea><br><br>
+
+        <button class="btn">Send</button>
+      </form>
+    </section>
+  </div>
+
+  <!-- Include Footer -->
+  <footer> ... </footer>
+
+  <script>
+    const path = window.location.pathname.split("/").pop().replace(".html", "");
+    document.querySelectorAll(".nav-link").forEach(link => {
+      if (link.dataset.page === path || (path === "" && link.dataset.page === "index")) {
+        link.classList.add("active");
+      }
+    });
+  </script>
+
+</body>
+</html>
