@@ -12,6 +12,5 @@ This project is a clean, responsive multi-page website built using HTML and CSS.
 OUTPUT
 
 
-
-         <img width="1920" height="1080" alt="Image" src="https://github.com/user-attachments/assets/22ca9c1d-29a4-4877-b7ac-389ec77be89b" />
+<img width="1920" height="1080" alt="Image" src="https://github.com/user-attachments/assets/22ca9c1d-29a4-4877-b7ac-389ec77be89b" />
       
